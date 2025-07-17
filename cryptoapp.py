@@ -16,7 +16,7 @@ class CryptoApp:
         self.api_working()
         
     def api_working(self):
-        self.api_key = "dcc2d442641f5f38a955f647ad1bbfe2fd5dd627a8ae78ac7c86f56f30e6f681"
+        self.api_key = "YourCoinCapApiHere"
         self.api_url = f"https://rest.coincap.io/v3/assets?apiKey={self.api_key}"
         self.data_req = requests.get(self.api_url)
         self.data = self.data_req.json()
